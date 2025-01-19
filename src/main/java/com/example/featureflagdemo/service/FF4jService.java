@@ -17,7 +17,7 @@ public class FF4jService {
     @Bean
     public CommandLineRunner getCommandLineRunner() {
         return args -> {
-            System.out.println("Availale features: " + ff4j.getFeatures());
+            System.out.println("Available features: " + ff4j.getFeatures());
             while(true) {
                 if (ff4j.check("release-date-feature")) {
                     System.out.println("release-date-feature is enabled");
